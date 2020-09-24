@@ -1,0 +1,15 @@
+.DS_Store
+*.pyc
+__pycache__/
+migrations
+stacticcdn
+.idea/
+db.sqlite3
+.idea
+media/
+staticcdn/
+.vscode/
+venv/
+credentials.yaml
+build/
+logs/
