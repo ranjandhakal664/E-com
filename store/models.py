@@ -71,3 +71,12 @@ class ShippingAddress(models.Model):
 
     def __str__(self):
         return self.address
+
+    @property
+    def shipping(self):
+        shipping = False
+        orderitems = self.orderitem_set.all()
+        for i in orderitems:
+            if i.product.didital == False:
+                shipping = True
+        return shipping
